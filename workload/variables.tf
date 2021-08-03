@@ -6,10 +6,10 @@ variable "environment" {
   type = string
 }
 
-variable "name" {
+variable "service_name" {
   type = string
 }
 
-variable "version" {
+variable "service_version" {
   type = string
 }
