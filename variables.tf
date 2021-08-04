@@ -10,10 +10,10 @@ variable "environment" {
   type = string
 }
 
-variable "service_name" {
+variable "contracts_version" {
   type = string
 }
 
-variable "service_version" {
+variable "orders_version" {
   type = string
 }
