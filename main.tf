@@ -11,7 +11,7 @@ module "storage" {
 }
 
 module "orders" {
-  source = "./application/orders"
+  source = "./application"
   bucket = var.bucket
   company = var.company
   environment = var.environment
@@ -20,7 +20,7 @@ module "orders" {
 }
 
 module "contracts" {
-  source = "./application/contracts"
+  source = "./application"
   bucket = var.bucket
   company = var.company
   environment = var.environment
