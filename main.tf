@@ -11,19 +11,19 @@ module "storage" {
 }
 
 module "orders" {
-  source = "./services/orders"
+  source = "./application/orders"
   bucket = var.bucket
   company = var.company
   environment = var.environment
-  service_name = var.service_name
-  service_version = var.service_version
+  service_name = orders
+  service_version = var.orders_version
 }
 
 module "contracts" {
-  source = "./services/contracts"
+  source = "./application/contracts"
   bucket = var.bucket
   company = var.company
   environment = var.environment
-  service_name = var.service_name
-  service_version = var.service_version
+  service_name = contracts
+  service_version = var.contracts_version
 }
